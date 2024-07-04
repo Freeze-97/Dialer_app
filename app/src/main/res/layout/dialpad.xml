@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dialer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialpad">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <se.miun.toya1800.dt031g.dialer.DialpadUpper
+            android:id="@+id/dialpadUpper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66666666" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33333333" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal1"
+            app:layout_constraintEnd_toStartOf="@+id/vertical1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            dialer:message=""
+            dialer:title="1" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal1"
+            app:layout_constraintEnd_toStartOf="@+id/vertical2"
+            app:layout_constraintStart_toStartOf="@+id/vertical1"
+            app:layout_constraintTop_toTopOf="parent"
+            dialer:message="ABC"
+            dialer:title="2" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dialpadButton2"
+            app:layout_constraintTop_toTopOf="parent"
+            dialer:message="DEF"
+            dialer:title="3" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/horizontal1"
+            dialer:message="GHI"
+            dialer:title="4" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical2"
+            app:layout_constraintStart_toStartOf="@+id/vertical1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal1"
+            dialer:message="JKL"
+            dialer:title="5" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertical2"
+            app:layout_constraintTop_toTopOf="@+id/horizontal1"
+            dialer:message="MNO"
+            dialer:title="6" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal3"
+            app:layout_constraintEnd_toStartOf="@+id/vertical1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/horizontal2"
+            app:layout_constraintVertical_bias="0.0"
+            dialer:message="PQRS"
+            dialer:title="7" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertical2"
+            app:layout_constraintTop_toTopOf="@+id/horizontal2"
+            dialer:message="WXYZ"
+            dialer:title="9" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical2"
+            app:layout_constraintStart_toStartOf="@+id/vertical1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal3"
+            dialer:message="+"
+            dialer:title="0" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialButton_Hashtag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertical2"
+            app:layout_constraintTop_toTopOf="@+id/horizontal3"
+            dialer:message=""
+            dialer:title="#" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialButton_Star"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vertical1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialpadButton7"
+            dialer:message=""
+            dialer:title="*" />
+
+        <se.miun.toya1800.dt031g.dialer.DialpadButton
+            android:id="@+id/dialpadButton8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal3"
+            app:layout_constraintEnd_toEndOf="@+id/vertical2"
+            app:layout_constraintStart_toStartOf="@+id/vertical1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal2"
+            dialer:message="TUV"
+            dialer:title="8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

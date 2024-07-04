@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="store_calls"
+        android:summary="Dialed telephone numbers are stored so they can be viewed later"
+        android:title="Store numbers"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>
